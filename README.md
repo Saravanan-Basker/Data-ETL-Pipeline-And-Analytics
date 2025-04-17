@@ -12,9 +12,8 @@ Tools | Role
 🛰️ Apache Kafka | Real-time Streaming Layer
 🔥 Apache Spark PySpark | Stream Consumer + Transformation
 🗃️ Apache Hadoop HDFS (Parquet) | Scalable Data Lake Storage
-🧩 JSON | Local deduplication state
-# Anaconda Jupyter Notebook | Data Analysis
-
+🧩 Anaconda Jupyter Notebook | Data Analysis and finally create json file to store seen video id to prevent duplicates while excuting 
+ 
 
 🚀 Key Features
 
@@ -61,11 +60,7 @@ These analyses not only showcase the depth of data collected but also help infor
 
 🔗 Data Flow (Simplified Architecture)
 
-YouTube API → Kafka Producer (Python) → Kafka Topic
-                        ↓
-              Kafka Consumer (PySpark)
-                        ↓
-                   HDFS (Parquet)
+YouTube API -> Kafka Producer (Python) -> Kafka Topic -> Kafka Consumer (PySpark) -> HDFS (Parquet)
 
 
 
